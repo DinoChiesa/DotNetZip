@@ -74,7 +74,7 @@ The release includes the library, as well as some sample applications (with sour
 
 If you find DotNetZip useful, consider donating. I am accepting donations.
 
-Background and Details
+[Background and Details](Background-and-Details.md)
 
 ## Frequently Asked Questions
 
