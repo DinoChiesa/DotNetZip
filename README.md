@@ -69,6 +69,7 @@ It is designed to be simple and easy to use. DotNetZip is packaged as a single D
 [Info on Getting Started with DotNetZip in Visual Studio](./docs/GettingStarted-VisualStudio.md).
 
 The release includes the library, as well as some sample applications (with source) showing how to use the library. This is a look at the WinForms sample app that creates and zip files. It serves as my free replacement for the $29 WinZip tool:
+
 ![DotNetZip tool](./docs/CropperCapture19.png)
 
 If you find DotNetZip useful, consider donating. I am accepting donations.
@@ -81,12 +82,12 @@ Background and Details
 DotNetZip is packaged as a single DLL, a single assembly. It is fully managed code, written in C#, and provides support for reading and writing Zip archive files and streams. The main type is ZipFile, featuring methods like Add(), Extract() and Save(). There are string and int indexers for the entries of the ZipFile. There are properties for things like password protection, unicode and codepage support, and ZIP64 behavior. And there are progress events for Reading, Saving, and Extracting.
 
 ### What do I need, in order to be able to create and read zip files from within my application using this library?
-To use the zip capability in your applications, you need to be using the .NET Framework 2.0 or later, and you need the DotNetZip Devkit assembly. You do not need to download the sourcecode of DotNetZip in order to use it. You can simply download the binary. 
+To use the zip capability in your applications, you need to be using the .NET Framework 2.0 or later, and you need the DotNetZip Devkit assembly. You do not need to download the sourcecode of DotNetZip in order to use it. You can simply download the binary.
 
-You can use the Zip library from any application, whether a console application, a Windows-Forms application, a server-based application like an ASP.NET page, a smart-device app, a Windows Service, a Silverlight app, or something else. You can use C#, VB.NET, COBOL.NET, IronPython, IronRuby, F#, or any other .NET language. You can also use COM environments, like ASP pages, Javascript, PHP, and others. To build your application, you can use the full version of Visual Studio, or one of the Visual Studio Express tools, or just a text editor. 
+You can use the Zip library from any application, whether a console application, a Windows-Forms application, a server-based application like an ASP.NET page, a smart-device app, a Windows Service, a Silverlight app, or something else. You can use C#, VB.NET, COBOL.NET, IronPython, IronRuby, F#, or any other .NET language. You can also use COM environments, like ASP pages, Javascript, PHP, and others. To build your application, you can use the full version of Visual Studio, or one of the Visual Studio Express tools, or just a text editor.
 
 ### What if I just want to use the graphical tool?
-No problem. Just download the Utils zip or MSI from the latest releases tab, and you will get an easy-to-use fully-functional ZIP creation and extraction tool, a free functional-equivalent replacement for WinZip. It supports all the DotNetZip capability, like SFX, AES, ZIP64, arbitrary Code Pages, Unicode, zip comments, file and entry selection, spanned or segmented zips, and more. 
+No problem. Just download the Utils zip or MSI from the latest releases tab, and you will get an easy-to-use fully-functional ZIP creation and extraction tool, a free functional-equivalent replacement for WinZip. It supports all the DotNetZip capability, like SFX, AES, ZIP64, arbitrary Code Pages, Unicode, zip comments, file and entry selection, spanned or segmented zips, and more.
 
 ### What do I need to build this library from the source?
 You need the .NET Framework SDK v3.5, or later; or, Visual Studio 2008 or later. While the library is usable by .NET 2.0 and later, to build it you need .NET 3.5 or later. This is because the source code uses features that were introduced in the C# v3.0 compiler, vars and array initializers and so on. The .NET 3.5 SDK is available here. I don't know if the library will build in Visual C# Express 2008; I never tried it. It should. 
