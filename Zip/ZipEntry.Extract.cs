@@ -1398,12 +1398,27 @@ namespace Ionic.Zip
                 // drop the slash and unpack to the specified base directory.
                 string f = this.FileName.Replace("\\","/");
 
-                // workitem 11772: remove drive letter with separator
-                if (f.IndexOf(':') == 1)
-                    f= f.Substring(2);
+                bool driveLetter;
+                bool slash;
+                do
+                {
+                    // workitem 11772: remove drive letter with separator
+                    if (f.IndexOf(':') == 1)
+                    {
+                        driveLetter = true;
+                        f= f.Substring(2);
+                    }
+                    else
+                        driveLetter = false;
 
-                if (f.StartsWith("/"))
-                    f= f.Substring(1);
+                    if (f.StartsWith("/"))
+                    {
+                        slash = true;
+                        f= f.Substring(1);
+                    }
+                    else
+                        slash = false;
+                } while (driveLetter || slash);
 
                 // String.Contains is not available on .NET CF 2.0
 
