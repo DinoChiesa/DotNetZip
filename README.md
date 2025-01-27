@@ -1,5 +1,10 @@
 # DotNetZip - migrated repo
 
+
+This repo is now read-only. It is preserved as a read-only archive of the DotNetZip ource code.
+The latest code is available [here](https://github.com/DinoChiesa/DotNetZip-2025). 
+
+
 # DotNetZip - Zip and Unzip in C#, VB, any .NET language
 DotNetZip is a FAST, FREE class library and toolset for manipulating zip files. Use VB, C# or any .NET language to easily create, extract, or update zip files.
 
