@@ -150,16 +150,7 @@ namespace Ionic.Crc
             {
                 int x = offset + i;
                 byte b = block[x];
-                if (this.reverseBits)
-                {
-                    UInt32 temp = (_register >> 24) ^ b;
-                    _register = (_register << 8) ^ crc32Table[temp];
-                }
-                else
-                {
-                    UInt32 temp = (_register & 0x000000FF) ^ b;
-                    _register = (_register >> 8) ^ crc32Table[temp];
-                }
+                UpdateCRC(b);
             }
             _TotalBytesRead += count;
         }
